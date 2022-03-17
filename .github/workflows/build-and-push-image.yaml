@@ -34,7 +34,7 @@ jobs:
         id: meta-solrsearchservice
         uses: docker/metadata-action@98669ae865ea3cffbcbaa878cf57c20bbf1c6c38
         with:
-          images: ${{ env.REGISTRY }}/solrsearchservice-${{ github.ref_name }}
+          images: ${{ env.REGISTRY }}/gattma/solrsearchservice-${{ github.ref_name }}
           tags: |
             type=sha
 
@@ -51,7 +51,7 @@ jobs:
         id: meta-solrfrontendfacade
         uses: docker/metadata-action@98669ae865ea3cffbcbaa878cf57c20bbf1c6c38
         with:
-          images: ${{ env.REGISTRY }}/solrfrontendfacade-${{ github.ref_name }}
+          images: ${{ env.REGISTRY }}/gattma/solrfrontendfacade-${{ github.ref_name }}
           tags: |
             type=sha
 
