@@ -1,0 +1,11 @@
+fullnameOverride: fronted-facade
+image:
+  name: ghcr.io/gattma/solrfrontendfacade-develop
+  tag: sha-b750193
+
+route:
+  enabled: true
+
+env:
+  - name: SOLRSEARCHSERVICE_BASEURL
+    value: https://search-service-contest.apps.play.gepaplexx.com

@@ -2,6 +2,7 @@ package at.contest.solr.rest;
 
 import at.contest.solr.application.config.ApplicationConfig;
 import at.contest.solr.model.ApplicationInfo;
+import org.eclipse.microprofile.config.inject.ConfigProperty;
 
 import javax.inject.Inject;
 import javax.ws.rs.GET;
