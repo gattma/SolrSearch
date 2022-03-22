@@ -1,5 +1,6 @@
 package at.contest.solr.service;
 
+import at.contest.solr.application.interceptor.ResponseTimeDelay;
 import at.contest.solr.model.SearchResult;
 import org.apache.solr.client.solrj.SolrQuery;
 import org.apache.solr.client.solrj.SolrServerException;
@@ -24,6 +25,7 @@ public class SolrSearchService {
     @Inject
     HttpSolrClient client;
 
+    @ResponseTimeDelay
     public List<SearchResult> findByText(String text) throws SolrServerException, IOException {
         logger.infof("findByText(%s)", text);
         SolrQuery query = new SolrQuery();
