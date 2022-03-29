@@ -3,6 +3,7 @@ package at.contest.solr.rest;
 import at.contest.solr.model.SearchResult;
 import at.contest.solr.service.SolrSearchService;
 import org.apache.solr.client.solrj.SolrServerException;
+import org.eclipse.microprofile.config.inject.ConfigProperty;
 import org.jboss.logging.Logger;
 
 import javax.inject.Inject;
