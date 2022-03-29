@@ -24,13 +24,11 @@ public class SolrFrontendFacadeService {
     @Inject
     SolrConfigAggregatorClient configAggregatorClient;
 
-    //@Override
     public List<SearchResult> findByText(String text) {
         logger.infof("SolrFrontendFacadeService#findByText(%s)", text);
         return searchServiceClient.findByText(text);
     }
 
-    //@Override
     public Configurations readConfig() {
         logger.info("SolrFrontendFacadeService#readConfig()");
         return configAggregatorClient.getConfig();
