@@ -8,6 +8,7 @@ import org.apache.solr.client.solrj.impl.HttpSolrClient;
 import org.apache.solr.client.solrj.response.QueryResponse;
 import org.apache.solr.common.SolrDocument;
 import org.apache.solr.common.SolrDocumentList;
+import org.eclipse.microprofile.opentracing.Traced;
 import org.jboss.logging.Logger;
 
 import javax.enterprise.context.RequestScoped;
@@ -16,6 +17,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+@Traced
 @RequestScoped
 public class SolrSearchService {
 
